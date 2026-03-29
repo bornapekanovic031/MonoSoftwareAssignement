@@ -82,3 +82,15 @@ SEVERITY: Moderate
 PRIORITY: Medium
 SCREENSHOT/VIDEO: Yes (Video)
 
+BUG 7 (discovered it during automation testing)
+
+NOTE: I don't know how to reproduce this bug. I was running createAlbum.spec.js test and after numerous runs, I started getting the error that Test Photo already exists even though I couldn't see it on my profile.
+      I found it through search bar.  I was running tests on 29/03/2026 and date of last change is 30/03/2026 which is strange behavior.
+
+TITLE/SUMMARY: When running automated test for creating album and uploading cover image, image with the same name already existed even though it should've been deleted 
+STEPS TO REPRODUCE: Not sure. Maybe running createAlbum.spec.js constantly and deleting album and cover image on your profile so it eventually ends up in cache permenantly 
+EXPECTED RESULT: Image is deleted
+ACTUAL RESULT: Image is not deleted
+SEVERITY: Moderate
+PRIORITY: Medium
+SCREENSHOT/VIDEO: Yes (Screenshot)
